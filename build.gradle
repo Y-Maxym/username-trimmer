@@ -19,15 +19,17 @@ dependencies {
     implementation "org.thymeleaf:thymeleaf-spring6:$thymeleafVersion"
     implementation "jakarta.servlet:jakarta.servlet-api:$jakartaServletApiVersion"
 
-    implementation "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
-    implementation "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
-    implementation "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
+    implementation "org.apache.commons:commons-lang3:$apacheVersion"
 
     implementation "org.projectlombok:lombok:$lombokVersion"
     annotationProcessor "org.projectlombok:lombok:$lombokVersion"
 
     testImplementation platform('org.junit:junit-bom:5.10.3')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation "org.springframework:spring-test:$springVersion"
+    implementation "org.hamcrest:hamcrest-library:$hamcrestVersion"
+    implementation "org.mockito:mockito-core:$mockitoVersion"
+    implementation "org.mockito:mockito-junit-jupiter:$mockitoVersion"
 }
 
 test {

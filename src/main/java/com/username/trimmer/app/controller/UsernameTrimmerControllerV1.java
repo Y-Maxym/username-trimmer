@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/user/trim")
+@RequestMapping("v1/username/trim")
 @RequiredArgsConstructor
 public class UsernameTrimmerControllerV1 {
 
