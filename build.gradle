@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'war'
 }
 
 group = 'com.username.trimmer.app'
@@ -9,10 +10,21 @@ repositories {
     mavenCentral()
 }
 
+war {
+    archiveFileName = 'username-trimmer.war'
+}
+
 dependencies {
     implementation "org.springframework:spring-webmvc:$springVersion"
+    implementation "org.thymeleaf:thymeleaf-spring6:$thymeleafVersion"
+    implementation "jakarta.servlet:jakarta.servlet-api:$jakartaServletApiVersion"
+
+    implementation "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
+    implementation "com.fasterxml.jackson.core:jackson-core:$jacksonVersion"
 
     implementation "org.projectlombok:lombok:$lombokVersion"
+    annotationProcessor "org.projectlombok:lombok:$lombokVersion"
 
     testImplementation platform('org.junit:junit-bom:5.10.3')
     testImplementation 'org.junit.jupiter:junit-jupiter'

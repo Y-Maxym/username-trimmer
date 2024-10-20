@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Username Trimmer</title>
+</head>
+<body>
+<div>
+    <form th:method="POST" th:action="@{/user/trim}">
+        <label for="username">Enter username:</label>
+        <input id="username" type="text" name="username">
+        <input type="submit">
+    </form>
+</div>
+<div th:if="${username.length() > 0}">
+    <p th:text="${'Trimmed username: ' + username}"></p>
+</div>
+</body>
+</html>
