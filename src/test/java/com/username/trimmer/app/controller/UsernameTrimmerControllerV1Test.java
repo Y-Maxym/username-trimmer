@@ -1,6 +1,6 @@
 package com.username.trimmer.app.controller;
 
-import com.username.trimmer.app.model.service.UsernameTrimmerService;
+import com.username.trimmer.app.service.UsernameTrimmerService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

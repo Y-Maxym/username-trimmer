@@ -1,5 +1,6 @@
-package com.username.trimmer.app.model.service;
+package com.username.trimmer.app.service;
 
+import com.username.trimmer.app.service.UsernameTrimmerService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -7,7 +8,6 @@ import org.junit.jupiter.params.provider.CsvSource;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class UsernameTrimmerServiceTest {
-
 
     private final UsernameTrimmerService service = new UsernameTrimmerService();
 

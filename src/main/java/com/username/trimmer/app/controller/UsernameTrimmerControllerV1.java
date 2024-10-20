@@ -1,6 +1,6 @@
 package com.username.trimmer.app.controller;
 
-import com.username.trimmer.app.model.service.UsernameTrimmerService;
+import com.username.trimmer.app.service.UsernameTrimmerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

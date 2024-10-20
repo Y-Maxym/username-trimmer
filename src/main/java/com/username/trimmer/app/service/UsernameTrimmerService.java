@@ -1,4 +1,4 @@
-package com.username.trimmer.app.model.service;
+package com.username.trimmer.app.service;
 
 import org.springframework.stereotype.Service;
 
